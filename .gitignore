@@ -1,0 +1,173 @@
+# Renaissance HTML5 Edition - .gitignore
+# Universidad Valle del Momboy (UVM) - E-Actividad 2.1
+
+# =============================================================================
+# SISTEMA Y ENTORNO
+# =============================================================================
+
+# Archivos de sistema - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de sistema - Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de sistema - Linux
+*~
+
+# =============================================================================
+# EDITORES DE TEXTO
+# =============================================================================
+
+# Vim
+*.swp
+*.swo
+*~/.swp
+*~/.swo
+
+# Emacs
+*~
+#*#
+
+# VS Code
+.vscode/
+.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# =============================================================================
+# DEPENDENCIAS Y M\u00d3DULOS
+# =============================================================================
+
+# Node.js (no aplicable para este proyecto, pero por si acaso)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =============================================================================
+# ENTORNO Y CONFIGURACI\u00d3N
+# =============================================================================
+
+# Entorno
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Configuraci\u00f3n local
+*.local
+
+# =============================================================================
+# LOGS Y CACH\u00c9
+# =============================================================================
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
+.cache
+
+# =============================================================================
+# ARCHIVOS TEMPORALES
+# =============================================================================
+
+# temporales del sistema
+*.tmp
+*.temp
+
+# temporales de descarga
+*.part
+*.download
+
+# =============================================================================
+# ARCHIVOS DE DESARROLLO
+# =============================================================================
+
+# Archivos de pruebas locales
+/test/
+tests/
+
+# =============================================================================
+# ARCHIVOS ESPEC\u00c1FICOS DEL PROYECTO
+# =============================================================================
+
+# NOTA: Este proyecto NO debe tener:
+# - node_modules/
+# - package.json
+# - package-lock.json
+# - build/
+# - dist/
+# - .next/
+# - .parcel-cache/
+# - .svelte-kit/
+# - etc.
+
+# Esto es un proyecto 100% est\u00e1tico con HTML5 y CSS3
+
+# =============================================================================
+# QUE SE DEBE INCLUIR (NO IGNORAR)
+# =============================================================================
+
+# Los siguientes archivos NO deben ser ignorados:
+# - index.html
+# - explorar.html
+# - css/styles.css
+# - assets/images/educational-workflow.svg
+# - assets/audio/html5-semantico.mp3
+# - assets/video/flujo-educativo.mp4
+# - assets/video/flujo-educativo.es.vtt
+# - docs/ (todos los archivos)
+# - README.md
+# - REFERENCIAS.md
+# - .gitignore (este archivo)
+
+# =============================================================================
+# FIN DE .gitignore
+# =============================================================================

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laboratorio de aprendizaje HTML5 - Renaissance HTML5 Edition. Demostración de formularios, tablas y multimedia con HTML5 semántico.">
+  <title>Explorar | Laboratorio HTML5 - Renaissance HTML5 Edition</title>
+  
+  <!-- Fuente Google Fonts (opcional, no crítica para el funcionamiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS local -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Cabecera con navegación accesible -->
+  <header>
+    <div class="rn-header-container">
+      <a href="index.html" class="rn-brand" aria-label="Página principal de Renaissance HTML5 Edition">
+        Renaissance<span> HTML5</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="explorar.html" aria-current="page">Explorar</a></li>
+          <li><a href="#formulario" aria-label="Ir a la sección de formulario">Formulario</a></li>
+          <li><a href="#tabla" aria-label="Ir a la sección de tabla comparativa">Tabla</a></li>
+          <li><a href="#multimedia" aria-label="Ir a la sección de multimedia">Multimedia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero de Explorar -->
+    <section class="hero" aria-labelledby="explorar-title">
+      <h1 id="explorar-title">Laboratorio de aprendizaje HTML5</h1>
+      <p>Esta página demuestra el uso práctico de elementos HTML5 semánticos: formularios con validación, tablas accesibles, y elementos multimedia con subtítulos. Todo implementado sin dependencias externas.</p>
+      <a href="#formulario" class="rn-btn rn-btn--primary" aria-label="Ir al formulario de personalización">
+        Probar el Formulario
+      </a>
+    </section>
+
+    <!-- Sección de Formulario de Personalización -->
+    <section id="formulario" aria-labelledby="formulario-title">
+      <h2 id="formulario-title">Formulario de personalización conceptual</h2>
+      
+      <div class="form-description">
+        <p><strong>Nota:</strong> Este formulario es una demostración estructural de las capacidades de HTML5. No envía datos a ningún servidor ni procesa información real. Su propósito es educativo, mostrando el uso correcto de elementos como <code>&lt;form&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, <code>&lt;label&gt;</code>, y atributos de validación nativos.</p>
+      </div>
+
+      <form class="form-container" aria-label="Formulario de personalización educativa" method="get" action="#" onsubmit="event.preventDefault();">
+        <fieldset>
+          <legend>Información del documento</legend>
+          
+          <div class="form-group">
+            <label for="documento-nombre">Nombre o título del documento:</label>
+            <input 
+              type="text" 
+              id="documento-nombre" 
+              name="documento-nombre" 
+              placeholder="Ej: Guía de HTML5 Semántico, Tutorial de CSS" 
+              required 
+              minlength="3" 
+              maxlength="100"
+              aria-describedby="documento-help"
+            >
+            <small id="documento-help">Mínimo 3 caracteres, máximo 100.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="documento-descripcion">Descripción breve:</label>
+            <textarea 
+              id="documento-descripcion" 
+              name="documento-descripcion" 
+              placeholder="Descripción opcional del contenido del documento..." 
+              aria-describedby="descripcion-help"
+            ></textarea>
+            <small id="descripcion-help">Opcional. Máximo 500 caracteres.</small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Configuración de aprendizaje</legend>
+          
+          <div class="form-group">
+            <label for="perfil">Seleccione su perfil de aprendizaje:</label>
+            <select id="perfil" name="perfil" required aria-describedby="perfil-help">
+              <option value="" disabled selected>-- Seleccione un perfil --</option>
+              <option value="principiante">Principiante - Necesito explicaciones básicas</option>
+              <option value="junior">Junior/Mid - Tengo experiencia básica-intermedia</option>
+              <option value="arquitecto">Arquitecto - Diseño soluciones complejas</option>
+              <option value="ejecutivo">Ejecutivo - Necesito información resumida</option>
+            </select>
+            <small id="perfil-help">Requerido.Seleccione el perfil que mejor se adapte a sus necesidades.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="formato">Seleccione el formato pedagógico:</label>
+            <select id="formato" name="formato" required aria-describedby="formato-help">
+              <option value="" disabled selected>-- Seleccione un formato --</option>
+              <option value="tutorial">Tutorial detallado - Explicaciones paso a paso</option>
+              <option value="flashcards">Flashcards - Tarjetas de memorización</option>
+              <option value="resumen">Resumen ejecutivo - Información condensada</option>
+            </select>
+            <small id="formato-help">Requerido. Escoja cómo prefiere recibir el contenido.</small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Necesidades adicionales (opcional)</legend>
+          
+          <div class="form-group">
+            <label for="necesidades">Otras necesidades de aprendizaje:</label>
+            <textarea 
+              id="necesidades" 
+              name="necesidades" 
+              placeholder="Ej: Incluir ejemplos de código, enfocarse en accesibilidad, añadir ejercicios prácticos..."
+              rows="4"
+              aria-describedby="necesidades-help"
+            ></textarea>
+            <small id="necesidades-help">Opcional. Describa cualquier requerimiento especial.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="idioma">Idioma preferido:</label>
+            <select id="idioma" name="idioma" aria-describedby="idioma-help">
+              <option value="es" selected>Español</option>
+              <option value="en">Inglés</option>
+              <option value="pt">Portugués</option>
+            </select>
+            <small id="idioma-help">Opcional. Idioma para el material generado.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="duracion">Duración estimada:</label>
+            <input 
+              type="range" 
+              id="duracion" 
+              name="duracion" 
+              min="5" 
+              max="120" 
+              value="30" 
+              step="5"
+              aria-describedby="duracion-help"
+            >
+            <output for="duracion" id="duracion-value">30 minutos</output>
+            <small id="duracion-help">Ajuste la duración estimada del material: <span id="duracion-range">5-120 minutos</span>.</small>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <button type="submit" class="rn-btn rn-btn--primary" aria-label="Enviar formulario de personalización">
+            Generar Material Adaptado
+          </button>
+          <button type="reset" class="rn-btn rn-btn--secondary" aria-label="Restablecer formulario">
+            Limpiar Formulario
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Sección de Tabla Comparativa -->
+    <section id="tabla" aria-labelledby="tabla-title">
+      <h2 id="tabla-title">Comparación de formatos pedagógicos</h2>
+      <p>La siguiente tabla muestra una comparación entre los diferentes formatos de aprendizaje disponibles, sus características y casos de uso recomendados.</p>
+      
+      <div class="table-container">
+        <table aria-describedby="tabla-description">
+          <caption id="tabla-description">
+            Comparación de formatos pedagógicos por perfil de aprendizaje
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Formato</th>
+              <th scope="col">Perfil Recomendado</th>
+              <th scope="col">Duración Típica</th>
+              <th scope="col">Profundidad</th>
+              <th scope="col">Interactividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tutorial Detallado</th>
+              <td>Principiante, Junior/Mid</td>
+              <td>30-60 min</td>
+              <td>Alta</td>
+              <td>Media (Ejercicios guiados)</td>
+            </tr>
+            <tr>
+              <th scope="row">Flashcards</th>
+              <td>Principiante, Junior/Mid</td>
+              <td>10-20 min</td>
+              <td>Baja (Conceptos clave)</td>
+              <td>Alta (Auto-evaluación)</td>
+            </tr>
+            <tr>
+              <th scope="row">Resumen Ejecutivo</th>
+              <td>Ejecutivo, Arquitecto</td>
+              <td>5-15 min</td>
+              <td>Media (Panorama general)</td>
+              <td>Baja (Solo lectura)</td>
+            </tr>
+            <tr>
+              <th scope="row">Guía Visual</th>
+              <td>Todos los perfiles</td>
+              <td>15-45 min</td>
+              <td>Variable</td>
+              <td>Media (Diagramas interactivos)</td>
+            </tr>
+            <tr>
+              <th scope="row">Caso de Estudio</th>
+              <td>Arquitecto, Junior/Mid</td>
+              <td>45-120 min</td>
+              <td>Muy Alta</td>
+              <td>Alta (Análisis práctico)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sección de Multimedia -->
+    <section id="multimedia" aria-labelledby="multimedia-title">
+      <h2 id="multimedia-title">Recursos multimedia educativos</h2>
+      <p>Esta sección demuestra el uso de elementos multimedia nativos de HTML5 con accesibilidad completa.</p>
+
+      <div class="media-section">
+        <h3>Explicación de HTML5 Semántico</h3>
+        
+        <div class="media-container">
+          <!-- Audio -->
+          <div class="audio-container">
+            <h4>Narración: Introducción a HTML5 Semántico</h4>
+            <p>Escuche una explicación breve sobre la importancia de la semántica en HTML5:</p>
+            <audio 
+              controls 
+              preload="metadata"
+              aria-label="Narración educativa sobre HTML5 Semántico"
+            >
+              <source src="assets/audio/html5-semantico.mp3" type="audio/mpeg">
+              <p class="media-caption">
+                Su navegador no soporta el elemento de audio. 
+                <a href="assets/audio/html5-semantico.mp3" download>Descargar archivo MP3</a> (2.4 MB, 2 minutos 30 segundos).
+              </p>
+            </audio>
+            <p class="media-caption">
+              <strong>Transcripción:</strong> 
+              Bienvenidos a este breve tutorial sobre HTML5 Semántico. 
+              La semántica en HTML5 nos permite dar significado a nuestro contenido, 
+              mejorando la accesibilidad, el SEO y la comprensión del código. 
+              Elementos como header, nav, main, article, section, aside y footer 
+              ayudan a los navegadores y tecnologías asistivas a entender la estructura 
+              de nuestra página. Este es un concepto fundamental para desarrollar 
+              sitios web accesibles y bien estructurados.
+            </p>
+          </div>
+
+          <!-- Video -->
+          <div class="video-container">
+            <h4>Video: Flujo de Trabajo Educativo</h4>
+            <p>Observe una animación que explica el flujo de trabajo de Renaissance:</p>
+            <video 
+              controls 
+              preload="metadata"
+              poster="assets/images/educational-workflow.svg"
+              width="600" 
+              height="400"
+              aria-label="Video explicativo del flujo de trabajo educativo"
+            >
+              <source src="assets/video/flujo-educativo.mp4" type="video/mp4">
+              <track 
+                src="assets/video/flujo-educativo.es.vtt" 
+                kind="subtitles" 
+                srclang="es" 
+                label="Español" 
+                default
+              >
+              <p class="media-caption">
+                Su navegador no soporta el elemento de video. 
+                <a href="assets/video/flujo-educativo.mp4" download>Descargar archivo MP4</a> (5.2 MB, H.264, 1 minuto 15 segundos).
+              </p>
+            </video>
+            <p class="media-caption">
+              <strong>Descripción:</strong> 
+              Video animado que muestra los cuatro pasos del proceso: 
+              1) Seleccionar documento, 2) Elegir perfil, 3) Seleccionar formato, 
+              4) Recibir material adaptado. Incluye narración y subtítulos en español.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección con Figura Ilustrativa -->
+    <section aria-labelledby="imagen-title">
+      <h2 id="imagen-title">Diagrama visual del proceso</h2>
+      <figure class="figure-container">
+        <img 
+          src="assets/images/educational-workflow.svg" 
+          alt="Diagrama de flujo circular con cuatro pasos: Seleccionar documento (icono de libro), Elegir perfil (icono de usuario), Seleccionar formato (icono de lista), Recibir material adaptado (icono de descarga). Cada paso conectado por flechas en sentido horario." 
+          width="800" 
+          height="600"
+        >
+        <figcaption>
+          Diagrama visual del flujo de trabajo educativo implementado en este proyecto.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Sección FAQ con Details/Summary -->
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Preguntas frecuentes</h2>
+      <p>Consulte nuestras preguntas frecuentes sobre el uso de HTML5 en este proyecto:</p>
+      
+      <div role="region" aria-label="Preguntas frecuentes">
+        <details class="details-faq" open>
+          <summary>¿Por qué es importante usar HTML5 semántico?</summary>
+          <p>
+            El HTML5 semántico mejora la accesibilidad para usuarios con discapacidades 
+            que utilizan tecnologías asistivas como lectores de pantalla. Además, ayuda 
+            a los motores de búsqueda a entender mejor la estructura y el contenido 
+            de tu página, mejorando el SEO. También hace que el código sea más legible 
+            y mantenible para otros desarrolladores.
+          </p>
+        </details>
+
+        <details class="details-faq">
+          <summary>¿Qué elementos semánticos de HTML5 se utilizan en este proyecto?</summary>
+          <p>
+            Este proyecto utiliza: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, 
+            <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, 
+            <code>&lt;footer&gt;</code>, <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code>, 
+            <code>&lt;form&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, 
+            <code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, 
+            <code>&lt;tbody&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;audio&gt;</code>, 
+            <code>&lt;video&gt;</code>, <code>&lt;track&gt;</code>, <code>&lt;details&gt;</code>, 
+            y <code>&lt;summary&gt;</code>.
+          </p>
+        </details>
+
+        <details class="details-faq">
+          <summary>¿Cómo se asegura la accesibilidad en este proyecto?</summary>
+          <p>
+            La accesibilidad se garantiza mediante: 
+            <ul>
+              <li>Uso de elementos semánticos HTML5</li>
+              <li>Atributos <code>aria-</code> apropiados</li>
+              <li>Textos alternativos (<code>alt</code>) en imágenes</li>
+              <li>Etiquetas (<code>label</code>) asociadas a todos los controles de formulario</li>
+              <li>Estructura de tablas con <code>scope</code>, <code>caption</code>, <code>thead</code>, <code>tbody</code></li>
+              <li>Subtítulos y transcripciones para multimedia</li>
+              <li>Colores con contraste adecuado (WCAG AA/AAA)</li>
+              <li>Navegación por teclado completa</li>
+              <li>Estados de foco visibles</li>
+            </ul>
+          </p>
+        </details>
+
+        <details class="details-faq">
+          <summary>¿Este proyecto usa JavaScript o frameworks?</summary>
+          <p>
+            No. Este es un proyecto <strong>100% estático</strong> basado exclusivamente 
+            en HTML5 y CSS3. No utiliza JavaScript (excepto el mínimo necesario para el 
+            atribulo <code>onsubmit</code> preventDefault en el formulario demostrativo), 
+            ni frameworks como React, Vue, Angular, Bootstrap, Tailwind u otros. 
+            El objetivo es demostrar las capacidades nativas del navegador sin 
+            dependencias externas.
+          </p>
+        </details>
+
+        <details class="details-faq">
+          <summary>¿Puedo usar este proyecto como plantilla?</summary>
+          <p>
+            Sí, puedes usar este proyecto como referencia para tus propios trabajos. 
+            Sin embargo, recuerda que este es un proyecto académico específico para 
+            la E-Actividad 2.1 del curso FrontEndIVIVFI2026C de la UVM. Asegúrate de 
+            personalizarlo y adaptarlo a tus necesidades, y de dar el crédito 
+            apropiado si reutilizas partes significativas del código.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA de regreso -->
+    <section class="text-center" aria-label="Sección de retorno">
+      <h2>Regresar al inicio</h2>
+      <p>Si deseas volver a la página principal, haz clic en el siguiente botón.</p>
+      <a href="index.html" class="rn-btn rn-btn--secondary" aria-label="Regresar a la página principal">
+        Volver a Inicio
+      </a>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Proyecto Académico</h4>
+        <ul>
+          <li><strong>Institución:</strong> <span>Universidad Valle del Momboy (UVM)</span></li>
+          <li><strong>Curso:</strong> <span>FrontEndIVIVFI2026C</span></li>
+          <li><strong>Actividad:</strong> <span>E-Actividad 2.1 - Diseño web con HTML</span></li>
+          <li><strong>Profesor:</strong> <span>Prof. Anggelo Huz</span></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Directos</h4>
+        <ul>
+          <li><a href="#formulario">Formulario</a></li>
+          <li><a href="#tabla">Tabla Comparativa</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#faq-title">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <strong>Renaissance HTML5 Edition</strong> - © 2026 - Todos los derechos reservados.
+        Proyecto académico sin fines comerciales.
+      </p>
+      <p class="text-faint">
+        Este es un proyecto estático demostrativo. No procesa datos reales ni utiliza inteligencia artificial.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript mínimo para el control de duración -->
+  <script>
+    // Este es el único JavaScript en el proyecto: para demostrar el elemento output
+    // asociado al range input, como parte de la especificación de HTML5.
+    document.addEventListener('DOMContentLoaded', function() {
+      const duracionInput = document.getElementById('duracion');
+      const duracionValue = document.getElementById('duracion-value');
+      
+      if (duracionInput && duracionValue) {
+        duracionInput.addEventListener('input', function() {
+          duracionValue.textContent = this.value + ' minutos';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
