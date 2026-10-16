@@ -430,7 +430,7 @@ O arrastra el archivo `index.html` directamente a tu navegador.
 
 ### 📋 Validaci\u00f3n HTML
 
-Este proyecto ha sido validado usando las siguientes herramientas:
+Este proyecto puede ser validado usando las siguientes herramientas:
 
 1. **W3C Validator (Nu HTML Checker)**:
    - URL: https://validator.w3.org/nu/
