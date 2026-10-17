@@ -646,7 +646,15 @@ th[scope="row"] {
   border: 1px solid var(--color-border);
 }
 
-.audio-container audio,
+.audio-container audio {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: 54px;
+  min-height: 54px;
+  margin: var(--spacing-8) 0;
+}
+
 .video-container video {
   width: 100%;
   max-width: min(620px, 90vw);
