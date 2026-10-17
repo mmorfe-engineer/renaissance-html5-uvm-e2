@@ -605,8 +605,10 @@ th[scope="row"] {
 
 .figure-container img,
 .figure-container svg {
-  max-width: 100%;
+  max-width: min(860px, 100%);
+  max-height: min(65vh, 600px);
   height: auto;
+  object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: var(--elevation-card);
 }
