@@ -29,6 +29,7 @@
 - [🏆 Insignias](#-insignias)
 - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
 - [📘 Introducción](#-introducción)
+- [📌 Origen del proyecto y alcance académico](#-origen-del-proyecto-y-alcance-académico)
 - [🎨 Sistema de Diseño Visual](#-sistema-de-diseño-visual)
 - [🏗️ Arquitectura del Proyecto](#-arquitectura-del-proyecto)
 - [✨ Funcionalidades Implementadas](#-funcionalidades-implementadas)
@@ -60,9 +61,28 @@ El objetivo principal es cumplir con los requisitos de la **E-Actividad 2.1** de
 - Navegación funcional entre músltiples páginas
 - Documentación técnica completa
 
-### 📌 Nota Importante
+### 📌 Origen del proyecto y alcance académico
 
-> ⚠️ **Este es un proyecto demostrativo estático.** No procesa datos reales, no utiliza inteligencia artificial, ni se conecta a servidores externos. Su propósito es puramente educativo y de demostración de las capacidades nativas de HTML5 y CSS3.
+**Renaissance HTML5 Edition** es una adaptación académica independiente inspirada en **NuevaMente**, una iniciativa de tecnología educativa orientada a transformar documentación técnica compleja en experiencias de aprendizaje accesibles y personalizadas.
+
+La iniciativa original dispone de un repositorio de desarrollo y un prototipo interactivo:
+
+- **Proyecto original:** [NuevaMente G10 LATAM — GitHub](https://github.com/mmorfe-engineer/nuevamente_g10_latam)
+- **Prototipo interactivo:** [NuevaMente — Streamlit](https://nuevamenteg10latam-jnpaufeq4dzeyq6qw4spds.streamlit.app)
+
+#### Una adaptación diseñada para la evaluación
+
+Esta edición fue desarrollada específicamente para la **E-Actividad 2.1 — Diseño web con HTML**, de la Universidad Valle del Momboy (UVM).
+
+En lugar de trasladar la arquitectura completa de NuevaMente, se optó por construir una implementación estática, independiente y deliberadamente acotada, centrada en los fundamentos de HTML5: estructura semántica, navegación, formularios, tablas, elementos multimedia y accesibilidad.
+
+Esta separación responde a una decisión técnica y académica: **cumplir rigurosamente el pliego de condiciones de la evaluación sin introducir complejidad innecesaria, preservando al mismo tiempo la calidad visual, la coherencia conceptual y las buenas prácticas de desarrollo frontend.**
+
+Por ello, esta edición no incorpora procesamiento real de documentos, servicios de inteligencia artificial ni backend. Los formularios y flujos presentados tienen una finalidad demostrativa.
+
+Renaissance HTML5 Edition constituye una implementación educativa autónoma, con un alcance claramente definido y una identidad visual inspirada en NuevaMente.
+
+Para explorar la iniciativa más allá del alcance académico, pueden consultarse el repositorio original y el prototipo interactivo mediante los enlaces anteriores.
 
 ---
 
