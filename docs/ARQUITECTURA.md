@@ -45,12 +45,13 @@ renaissance-html5-uvm-e2/
 │   └── styles.css               # Estilos CSS originales (19.3 KB)
 ├── assets/
 │   ├── images/
-│   │   └── educational-workflow.svg  # Diagrama de flujo (6.4 KB)
+│   │   ├── educational-workflow.png  # Diagrama de flujo (1.8 MB, 1448×1086)
+│   │   └── github-logo.jpg           # Logotipo de GitHub (371 B)
 │   ├── audio/
-│   │   ├── html5-semantico.mp3     # Narraci\u00f3n (REMPLAZAR)
+│   │   ├── html5-semantico.mp3     # Narración (1.1 MB)
 │   │   └── README.txt              # Instrucciones
 │   └── video/
-│       ├── flujo-educativo.mp4      # Video (REMPLAZAR)
+│       ├── flujo-educativo.mp4      # Video (6.0 MB, 720×1280)
 │       ├── flujo-educativo.es.vtt    # Subt\u00edtulos (0.7 KB)
 │       └── README.txt              # Instrucciones
 ├── docs/
@@ -126,7 +127,7 @@ renaissance-html5-uvm-e2/
 
 | Archivo | Formato | Tama\u00f1o | Prop\u00f3sito |
 |--------|---------|--------|-----------|
-| `flujo-educativo.mp4` | MP4 | ~5.2 MB | Video explicativo del flujo |
+| `flujo-educativo.mp4` | MP4 | 6.0 MB | Video explicativo del flujo (720×1280, vertical) |
 | `flujo-educativo.es.vtt` | WebVTT | 0.7 KB | Subt\u00edtulos en espa\u00f1ol |
 
 **Requisitos para flujo-educativo.mp4:**
@@ -135,7 +136,7 @@ renaissance-html5-uvm-e2/
 - Codec de audio: AAC
 - Resoluci\u00f3n: 600x400px
 - Duraci\u00f3n: 1 minuto 15 segundos
-- Poster: educational-workflow.svg
+- Poster: educational-workflow.png
 
 ### Directorio Docs
 

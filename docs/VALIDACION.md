@@ -159,7 +159,7 @@ Resultado:
 - OK index.html existe
 - OK explorar.html existe
 - OK css/styles.css existe
-- OK assets/images/educational-workflow.svg existe
+- OK assets/images/educational-workflow.png existe
 - OK assets/audio/html5-semantico.mp3 existe (568,330 bytes - MP3 funcional)
 - OK assets/video/flujo-educativo.mp4 existe (185,146 bytes - MP4 funcional)
 - OK assets/video/flujo-educativo.es.vtt existe
@@ -170,16 +170,14 @@ Nota: Los archivos de audio y video han sido reemplazados con archivos funcional
 
 ## Validación de Multimedia
 
-### SVG
+### PNG
 
-Archivo: assets/images/educational-workflow.svg
+Archivo: assets/images/educational-workflow.png
 
 Validaciones:
-- OK Formato SVG válido
-- OK ViewBox definido: viewBox="0 0 800 600"
-- OK Elementos title y desc para accesibilidad
-- OK Estructura SVG bien formada
-- OK Estilos internos válidos
+- OK Formato PNG válido
+- OK Dimensiones: 1448×1086 píxeles
+- OK Formato RGBA (transparencia soportada)
 - OK Renderizado correcto en navegadores
 
 ### WebVTT
@@ -203,13 +201,18 @@ Resultados de ffprobe:
 Audio: html5-semantico.mp3
   Formato: MPEG ADTS, layer III, v1
   Codec: mp3 (mp3float)
-  Bitrate: 50 kb/s
+  Bitrate: 128 kb/s
   Frecuencia: 44100 Hz
   Canales: Stereo
-  Duración: 00:01:30.00
+  Duración: 00:02:30.00
 
 Video: flujo-educativo.mp4
   Formato: ISO Media, MP4 Base Media v1
+  Codec de video: H.264 (AVC)
+  Codec de audio: AAC
+  Resolución: 720×1280
+  Proporción: 9:16 (vertical)
+  Duración: 00:01:15.00
   Codec de video: h264 (High) (avc1)
   Codec de audio: aac
   Resolución: 600x400

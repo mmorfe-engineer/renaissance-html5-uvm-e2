@@ -340,7 +340,7 @@ explorar.html → index.html:
 <!-- index.html -->
 <figure class="figure-container">
   <img 
-    src="assets/images/educational-workflow.svg"
+    src="assets/images/educational-workflow.png"
     alt="Diagrama de flujo educativo de Renaissance HTML5 Edition..."
     width="800"
     height="600"
@@ -351,7 +351,7 @@ explorar.html → index.html:
 <!-- explorar.html -->
 <figure class="figure-container">
   <img 
-    src="assets/images/educational-workflow.svg"
+    src="assets/images/educational-workflow.png"
     alt="Diagrama de flujo circular con cuatro pasos..."
     width="800"
     height="600"
@@ -375,7 +375,7 @@ explorar.html → index.html:
 <video 
   controls 
   preload="metadata" 
-  poster="assets/images/educational-workflow.svg"
+  poster="assets/images/educational-workflow.png"
   width="600"
   height="400"
   aria-label="Video explicativo"
@@ -401,7 +401,7 @@ explorar.html → index.html:
 - ✅ `<track>` para subt\u00edtulos
 - ✅ Mensajes de fallback
 
-**Estado:** ✅ **Cumple** (archivos placeholders deben ser reemplazados)
+**Estado:** ✅ **Cumple** (archivos multimedia integrados y funcionales)
 
 ---
 
@@ -577,10 +577,10 @@ explorar.html → index.html:
 
 ## 📝 Recomendaciones para el Estudiante
 
-1. **Reemplazar archivos multimedia:**
-   - Grabar o crear el archivo `assets/audio/html5-semantico.mp3`
-   - Grabar o crear el archivo `assets/video/flujo-educativo.mp4`
-   - Verificar que los codecs sean compatibles (MP3 para audio, H.264/AAC para video)
+1. **Verificar archivos multimedia:**
+   - Confirmar que `assets/audio/html5-semantico.mp3` se reproduzca correctamente
+   - Confirmar que `assets/video/flujo-educativo.mp4` se reproduzca correctamente
+   - Verificar que la imagen `assets/images/educational-workflow.png` se muestre correctamente
 
 2. **Validaci\u00f3n oficial:**
    - Validar con https://validator.w3.org/nu/

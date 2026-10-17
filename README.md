@@ -40,7 +40,7 @@
 - [📊 Matriz de Funcionalidades](#-matriz-de-funcionalidades)
 - [📚 Documentación Académica](#-documentación-académica)
 - [🎯 Roadmap](#-roadmap)
-- [👤 Mantenedor](#-mantenedor)
+- [👤 Autor y estudiante responsable](#-autor-y-estudiante-responsable)
 - [📜 Licencia](#-licencia)
 - [📅 Entrega](#-entrega)
 
@@ -149,11 +149,12 @@ renaissance-html5-uvm-e2/
 │   └── styles.css         # Estilos CSS originales con variables y responsive
 ├── assets/
 │   ├── images/
-│   │   └── educational-workflow.svg  # Diagrama de flujo educativo (SVG original)
+│   │   ├── educational-workflow.png  # Diagrama de flujo educativo (PNG)
+│   │   └── github-logo.jpg           # Logotipo de GitHub
 │   ├── audio/
-│   │   └── html5-semantico.mp3     # Narración sobre HTML5 (REMPLAZAR)
+│   │   └── html5-semantico.mp3     # Narración sobre HTML5 Semántico
 │   └── video/
-│       ├── flujo-educativo.mp4      # Video explicativo (REMPLAZAR)
+│       ├── flujo-educativo.mp4      # Video explicativo del flujo
 │       └── flujo-educativo.es.vtt    # Subtítulos en español
 └── docs/
     ├── ARQUITECTURA.md      # Documentación de arquitectura
@@ -257,9 +258,9 @@ flowchart TD
 
 | Recurso | Archivo | Formato | Descripción |
 |---------|---------|---------|-------------|
-| Imagen | `educational-workflow.svg` | SVG | Diagrama de flujo educativo original |
-| Audio | `html5-semantico.mp3` | MP3 | Narración sobre HTML5 Semántico |
-| Video | `flujo-educativo.mp4` | MP4 (H.264/AAC) | Video explicativo del flujo |
+| Imagen | `educational-workflow.png` | PNG | Diagrama de flujo educativo (1448×1086) |
+| Audio | `html5-semantico.mp3` | MP3 | Narración sobre HTML5 Semántico (2:30 min) |
+| Video | `flujo-educativo.mp4` | MP4 (H.264/AAC) | Video explicativo del flujo (720×1280, vertical) |
 | Subtítulos | `flujo-educativo.es.vtt` | WebVTT | Subtítulos en español |
 
 ### 🔗 Navegación
@@ -520,12 +521,13 @@ renaissance-html5-uvm-e2/
 │   └── styles.css               # 19.3 KB - Estilos CSS
 ├── assets/
 │   ├── images/
-│   │   └── educational-workflow.svg  #  6.4 KB - Diagrama SVG
+│   │   ├── educational-workflow.png  #  1.8 MB - Diagrama PNG (1448×1086)
+│   │   └── github-logo.jpg           #    371 B - Logotipo de GitHub
 │   ├── audio/
-│   │   └── html5-semantico.mp3     #  ~2.4 MB - Audio MP3 (REMPLAZAR)
+│   │   └── html5-semantico.mp3     #  1.1 MB - Audio MP3
 │   │   └── README.txt              # Instrucciones
 │   └── video/
-│       ├── flujo-educativo.mp4      #  ~5.2 MB - Video MP4 (REMPLAZAR)
+│       ├── flujo-educativo.mp4      #  6.0 MB - Video MP4 (720×1280)
 │       ├── flujo-educativo.es.vtt    #  0.7 KB - Subtítulos WebVTT
 │       └── README.txt              # Instrucciones
 ├── docs/
@@ -648,13 +650,16 @@ Los siguientes elementos **NO** son parte de esta actividad y **NO** están impl
 
 ---
 
-## 👤 Mantenedor
+## 👤 Autor y estudiante responsable
 
 | Información | Detalle |
 |----------------|---------|
-| **Nombre** | mmorfe-engineer |
+| **Nombre** | Martin Morfe.* |
+| **Institución** | Universidad Valle del Momboy |
+| **Curso** | FrontEndIVIVFI2026C |
+| **Actividad** | E-Actividad 2.1 — Diseño web con HTML5 |
 | **GitHub** | https://github.com/mmorfe-engineer |
-| **Proyecto** | renaissance-html5-uvm-e2 |
+| **Repositorio** | renaissance-html5-uvm-e2 |
 
 ---
 

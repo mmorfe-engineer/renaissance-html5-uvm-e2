@@ -82,9 +82,9 @@ Usa esta lista para verificar que todo est\u00e1 listo antes de la entrega:
 
 ### ✅ Multimedia
 
-- [ ] SVG original y accesible
-- [ ] Audio MP3 (html5-semantico.mp3) - **REMPLAZAR PLACEHOLDER**
-- [ ] Video MP4 (flujo-educativo.mp4) - **REMPLAZAR PLACEHOLDER**
+- [x] PNG original y accesible
+- [x] Audio MP3 (html5-semantico.mp3) - Archivo funcional
+- [x] Video MP4 (flujo-educativo.mp4) - Archivo funcional
 - [ ] Subt\u00edtulos WebVTT (flujo-educativo.es.vtt)
 - [ ] Transcripciones de audio/video
 
@@ -169,10 +169,10 @@ cedula_nombre.zip
     │   ├── images/
     │   │   └── educational-workflow.svg
     │   ├── audio/
-    │   │   ├── html5-semantico.mp3  ⚠️ REMPLAZAR
+    │   │   ├── html5-semantico.mp3  ✅ Funcional
     │   │   └── README.txt
     │   └── video/
-    │       ├── flujo-educativo.mp4  ⚠️ REMPLAZAR
+    │       ├── flujo-educativo.mp4  ✅ Funcional
     │       ├── flujo-educativo.es.vtt
     │       └── README.txt
     ├── docs/
@@ -451,7 +451,7 @@ C\u00e9dula: ___________________________
 
 | Error | Consecuencia | C\u00f3mo Evitar |
 |-------|--------------|--------------|
-| No reemplazar placeholders | Multimedia no funciona | Crear archivos reales de audio/video |
+| Archivos corruptos | Multimedia no funciona | Verificar integridad de los archivos |
 | Olvidar validar HTML | Errores de sintaxis | Usar W3C Nu Checker |
 | IDs duplicados | HTML inv\u00e1lido | Verificar con herramientas |
 | Enlaces rotos | Navegaci\u00f3n no funciona | Probar todos los enlaces |
@@ -499,7 +499,7 @@ Para preguntas sobre la entrega:
 - [ ] He probado el proyecto en al menos 2 navegadores
 - [ ] He verificado la accesibilidad b\u00e1sica
 - [ ] He revisado la ortograf\u00eda y gram\u00e1tica
-- [ ] He reemplazado los archivos placeholders de multimedia
+- [x] He integrado los archivos de multimedia definitivos
 - [ ] Estoy listo para entregar
 
 **Si todos los puntos est\u00e1n marcados, \u00a1est\u00e1s listo para entregar!**

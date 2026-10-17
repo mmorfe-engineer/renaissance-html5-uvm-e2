@@ -647,7 +647,10 @@ th[scope="row"] {
 .audio-container audio,
 .video-container video {
   width: 100%;
-  max-width: 600px;
+  max-width: min(620px, 90vw);
+  max-height: min(70vh, 620px);
+  height: auto;
+  object-fit: contain;
   border-radius: var(--radius-md);
   margin-top: var(--spacing-8);
 }
@@ -919,5 +922,28 @@ footer {
 .mb-2 { margin-bottom: var(--spacing-8); }
 .mb-3 { margin-bottom: var(--spacing-12); }
 .mb-4 { margin-bottom: var(--spacing-16); }
+
+/* Estilos para enlace de GitHub */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.github-link:hover {
+  color: var(--color-brand-strong);
+}
+
+.github-link:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.github-link img {
+  object-fit: contain;
+}
 
 /* Fin de styles.css */
